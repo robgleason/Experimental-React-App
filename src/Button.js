@@ -6,36 +6,41 @@ class Buttons extends Component {
    
     constructor(props) {
         super(props);
-        this.msg = "Hello"
-        
-         
+        // this.msg = "Hello"
+        this.state = {  title: "Click here", msg: "Hello!" }        
       }
        
-  
+   
+      changeTitle = () => {
+        this.setState({ title: "New title" });
+     };
+
+      reset = () => {
+        this.setState({ msg: "Goodbye!" });
+     };
       
       handleClick() {
         console.log('this is:', this);
-        
+        console.log(this.msg);
       }
 
 
       render() {
-   
+    
         return (
             
             <div className="App">
             <div className='Art'>
             <h1>Hello World</h1> 
-            <h1><Button variant="contained" color="primary" >Hello!</Button></h1> 
-            <h1><Button variant="contained" color="primary" >First</Button></h1> 
-            <h1><Button variant="contained" color="primary" >Second</Button></h1> 
+           
+            <h1><Button variant="contained" color="primary" onClick={(e) => this.reset(e)}>Click Me!</Button></h1> 
             
-             <h2>{this.msg}</h2>
+             <h2>{this.state.msg}</h2>
              <Button variant="contained" color="primary" onClick={(e) => this.handleClick(e)}>
-                 Click me for Console.log </Button>
+                 Check your console.log  </Button>
          
-         <h2>  {this.msg} Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h2>
-        
+         <h2> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h2>
+         <h1 onClick={this.changeTitle}>{this.state.title}</h1>;
         </div>
             </div>
         );
