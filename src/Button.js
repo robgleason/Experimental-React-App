@@ -62,12 +62,10 @@ class Buttons extends Component {
             <h1><Button variant="contained" color="primary" onClick={(e) => this.reset(e)}>Click Me!</Button></h1> 
             
              <h2>{this.state.msg}</h2>
-             <Button variant="contained" color="primary" onClick={(e) => this.handleClick(e)}>
-                 Check your console.log  </Button>
+            
          
          <h2> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h2>
-         <h1 onClick={this.changeTitle}>{this.state.title}</h1>
-         <h1 onClick={this.changeTitleTwo}>{this.state.title2}</h1>
+         {/* <h1 onClick={this.changeTitleTwo}>{this.state.title2}</h1> */}
 
         <h1><Button variant="contained" color="primary" onClick={(e) => this.rando(e)}>Random Pokemon!</Button></h1> 
 
