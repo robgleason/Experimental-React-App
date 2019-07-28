@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import Button from '@material-ui/core/Button';
+import Card from '@material-ui/core/Card';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
 import img0 from "./0.png";
 import img1 from "./1.png";
 import img2 from "./2.png";
@@ -84,6 +87,27 @@ class Buttons extends Component {
          <h1><Button variant="contained" color="primary" onClick={this.handleCick.bind(this)}>Random Pokemon</Button></h1>
          <img src={this.props.images[this.state.random]} alt="Random Picture"/>
     
+
+      <Card  >
+      <div
+        
+        
+        
+      >
+        <CardMedia
+          
+        />
+      </div>
+      <CardContent className= "card">
+        <h3 className= "date"></h3>
+       
+
+      <h1><Button variant="contained" color="primary" onClick={this.handleCick.bind(this)}>Random Pokemon</Button></h1>
+
+        </CardContent>
+        </Card>
+
+
         </div>
             </div>
         );

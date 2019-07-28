@@ -7,6 +7,12 @@
   background: url("https://cmsassets.mybluprint.com/dims4/default/99badeb/2147483647/strip/true/crop/5196x3103+0+361/resize/2880x1720!/quality/90/?url=https%3A%2F%2Fcmsassets.mybluprint.com%2F9b%2F07%2Fb854b5824b1797c1259d0ab1b47e%2Fblank-square-canvas-on-wooden-easel.jpg");
   /* ChamilleWhite/Getty Images/iStockphoto */
   background-position: center center;
+  background-size: 170% 170%;
+}
+
+.card {
+  background: url("https://images.homedepot-static.com/productImages/c17ccde8-8de1-4b73-8fe4-7d8a57158ceb/svn/checkeredflag-wilsonart-laminate-sheets-y0228603724896-64_1000.jpg");
+  background-size: 100% 200%;
 }
 
 .Art {
@@ -40,6 +46,9 @@ h1 {
 
 .App-link {
   color: #61dafb;
+}
+.date {
+  color: #bd0e1d;
 }
 
 @keyframes App-logo-spin {
