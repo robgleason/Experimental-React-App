@@ -99,7 +99,7 @@ class Buttons extends Component {
         />
       </div>
       <CardContent className= "card">
-        <h3 className= "date"></h3>
+        <h3></h3>
        
 
       <h1><Button variant="contained" color="primary" onClick={this.handleCick.bind(this)}>Random Pokemon</Button></h1>
