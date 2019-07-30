@@ -10,6 +10,7 @@ import img3 from "./3.png";
 import img4 from "./4.png";
 import img5 from "./5.png";
 import img6 from "./6.png";
+import Slider from './slider';
 
 class Buttons extends Component {
    
@@ -73,7 +74,7 @@ class Buttons extends Component {
             <div className="App">
             <div className='Art'>
             <h1>Hello World</h1> 
-           
+            <h1><Slider/></h1>
             <h1><Button variant="contained" color="primary" onClick={(e) => this.reset(e)}>Click Me!</Button></h1> 
             
              <h2>{this.state.msg}</h2>
@@ -98,12 +99,11 @@ class Buttons extends Component {
           
         />
       </div>
-      <CardContent className= "card">
+      <CardContent >
         <h3></h3>
        
 
-      <h1><Button variant="contained" color="primary" onClick={this.handleCick.bind(this)}>Random Pokemon</Button></h1>
-
+          <Slider/>
         </CardContent>
         </Card>
 
