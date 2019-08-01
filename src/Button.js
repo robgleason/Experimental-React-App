@@ -81,6 +81,7 @@ class Buttons extends Component {
             
          
          <h2> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h2>
+         <h2> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h2>
 
 
          
